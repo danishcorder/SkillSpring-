@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740'); /* Updated image link */
+    background: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740'); /* Updated image link */
     background-size: cover; /* Make the image cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740');
+    background: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740');
     color: white;
     padding: 1em 0;
     animation: slideDown 1s ease-out; /* Slide down animation for the header */
