@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: url('Vhttps://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740');
+    background-color: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740');
     color: white;
     padding: 1em 0;
     animation: slideDown 1s ease-out; /* Slide down animation for the header */
