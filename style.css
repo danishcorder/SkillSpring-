@@ -1,42 +1,49 @@
-/* Add a background image to the entire page */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); /* Path to the image file */
-    background-size: cover; /* Make the image cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: #333; /* Text color for readability */
 }
 
-/* Optional: Add a semi-transparent overlay to enhance text visibility */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: -1; /* Place it behind the content */
-}
-
-/* Add background images to specific sections */
-.hero {
-    background-image: url('images/hero-background.jpg'); /* Path to the hero section image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+header {
+    background-color: #0078d4;
     color: white;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
     text-align: center;
-    padding: 3em 1em;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 2em;
     margin-bottom: 2em;
 }
 
 footer {
-    background-color: #333; /* Add a solid background for the footer */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
+    margin-top: 2em;
 }
