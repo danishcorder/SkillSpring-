@@ -3,18 +3,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Background image option for the entire page */
     background-image: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740'); /* Updated image link */
     background-size: cover; /* Make the image cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: #333; /* Adjust text color for readability */
+    animation: fadeIn 2s ease-in; /* Page fade-in effect */
 }
 
 header {
     background-color: #0078d4;
     color: white;
     padding: 1em 0;
+    animation: slideDown 1s ease-out; /* Slide down animation for the header */
 }
 
 header nav ul {
@@ -33,15 +34,21 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Highlighted text */
+    transform: scale(1.1); /* Slight scaling on hover */
 }
 
 main {
     padding: 2em;
     text-align: center;
+    animation: fadeIn 2s ease-in; /* Fade-in animation for the main content */
 }
 
 .hero {
-    /* Background image option for hero section */
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45paLF1V6_1hVGp0mdRrmfafQhLFT8GShIw&s'); /* Updated image link */
     background-size: cover;
     background-position: center;
@@ -49,6 +56,7 @@ main {
     color: white; /* Adjust text color for readability */
     padding: 2em;
     margin-bottom: 2em;
+    animation: zoomIn 1.5s ease-in; /* Zoom-in animation for the hero section */
 }
 
 footer {
@@ -57,4 +65,48 @@ footer {
     text-align: center;
     padding: 1em 0;
     margin-top: 2em;
+    animation: fadeUp 1s ease-out; /* Fade-up animation for the footer */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
