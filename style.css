@@ -3,16 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45paLF1V6_1hVGp0mdRrmfafQhLFT8GShIw&s'); /* Background image for the entire page */
-    background-size: cover; /* Ensures the image covers the viewport */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #333; /* Text color for readability */
+    background-image: url('https://img.freepik.com/free-vector/education-concept-illustration_114360-2167.jpg?semt=ais_hybrid'); /* Background for the resources page */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background-color: #0078d4; /* Blue background */
+    background-color: rgba(0, 120, 212, 0.9);
     color: white;
     padding: 1em 0;
 }
@@ -33,136 +33,111 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    padding: 0.5em 1em;
+    transition: background 0.3s;
 }
 
+header nav ul li a.active,
 header nav ul li a:hover {
-    color: #ffcc00; /* Highlighted text */
-    transform: scale(1.1); /* Slight scaling on hover */
+    background-color: #ffcc00;
+    border-radius: 5px;
 }
 
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45paLF1V6_1hVGp0mdRrmfafQhLFT8GShIw&s'); /* Specific background for the hero section */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Text color for readability */
+    text-align: center;
     padding: 2em;
+    background: rgba(255, 255, 255, 0.8);
     margin-bottom: 2em;
-    text-align: center;
-}
-
-/* Profile Section */
-.profile {
-    padding: 2em;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-    text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    margin: 2em;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1em 0;
-    transition: transform 0.3s; /* Smooth hover effect */
-}
-
-.profile-pic:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
-
-/* Features Section */
-.features {
-    padding: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    background: rgba(240, 240, 240, 0.9); /* Subtle background */
-}
-
-.feature {
-    background: white;
-    padding: 1em;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 30%;
-    text-align: center;
 }
 
-.feature h3 {
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 0.5em;
+    border: 2px solid #0078d4;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #005a9e;
+}
+
+/* Resource Categories */
+.resource-categories {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.resource-categories h2 {
     margin-bottom: 1em;
 }
 
-/* Gallery Section */
-.gallery {
-    padding: 2em;
-    text-align: center;
+.category {
+    margin: 1em 0;
 }
 
-.gallery-pic {
-    width: 200px;
-    margin: 1em;
-    border-radius: 10px;
-    transition: transform 0.3s; /* Smooth zoom effect */
+.category ul {
+    list-style: none;
+    padding: 0;
 }
 
-.gallery-pic:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+.category li {
+    margin: 0.5em 0;
 }
 
-/* Footer Styling */
+.download-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-button:hover {
+    background-color: #005a9e;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: 2em;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+footer .social-media {
+    margin-top: 1em;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+footer .social-media a img {
+    width: 30px;
+    margin: 0 0.5em;
+    transition: transform 0.3s;
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 2s ease-in;
-}
-
-.slide-in {
-    animation: slideIn 2s ease-in;
-}
-
-.zoom-in {
-    animation: zoomIn 2s ease-in;
+footer .social-media a img:hover {
+    transform: scale(1.2);
 }
