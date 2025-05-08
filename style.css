@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* Background image option for the entire page */
-    background-image: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740'); /* Replace with your image path */
+    background-image: url('https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?semt=ais_hybrid&w=740'); /* Updated image link */
     background-size: cover; /* Make the image cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -42,7 +42,7 @@ main {
 
 .hero {
     /* Background image option for hero section */
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45paLF1V6_1hVGp0mdRrmfafQhLFT8GShIw&s'); /* Replace with your image path */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45paLF1V6_1hVGp0mdRrmfafQhLFT8GShIw&s'); /* Updated image link */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
