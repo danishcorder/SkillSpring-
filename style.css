@@ -1,74 +1,42 @@
-/* General Styles */
+/* Add a background image to the entire page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); /* Add your background image here */
-    background-size: cover; /* Ensure the image covers the entire viewport */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    color: #333; /* Adjust text color for better contrast */
+    background-image: url('images/background.jpg'); /* Path to the image file */
+    background-size: cover; /* Make the image cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #333; /* Text color for readability */
 }
 
-header {
-    background-color: rgba(0, 120, 212, 0.8); /* Add transparency to the header */
-    color: white;
-    padding: 1em 0;
+/* Optional: Add a semi-transparent overlay to enhance text visibility */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place it behind the content */
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 1em;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 2em;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background for content */
-    margin: 2em auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+/* Add background images to specific sections */
 .hero {
-    padding: 2em;
+    background-image: url('images/hero-background.jpg'); /* Path to the hero section image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 3em 1em;
     margin-bottom: 2em;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1em 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-pic {
-    width: 200px;
-    height: 150px;
-    margin: 1em;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Add transparency to the footer */
+    background-color: #333; /* Add a solid background for the footer */
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: 2em;
 }
